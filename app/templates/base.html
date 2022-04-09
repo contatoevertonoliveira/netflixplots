@@ -8,13 +8,15 @@
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-
-      <div class="col-12">
-        <img src="{% static 'img/netflixbanner.jpg' %}">
+    <div class="container">
+      <div class="col-12 text-align-center">
+        <img src="{% static 'img/netflixbanner.jpg' %}" style="width:100%;">
       </div>
+    
 
       {% block content %}{% endblock %}
 
+    </div>
     </body>
   </head>
 </html>

@@ -1,6 +1,9 @@
-{% load static %}
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Hello World!</h1>
+<div class="col-10 m-auto">
+  {% autoescape off %}
+    {{ dados }}
+  {% endautoescape %}
+</div>
 {% endblock %}
